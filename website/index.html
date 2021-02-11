@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Weather Journal</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="holder headline">My Weather Journal </div>
+    <div class="holder zip">
+      <label for="zip">Enter your Zipcode here</label>
+      <input type="text" id="zip" placeholder="Enter ZIP (example: 10001)">
+    </div>
+    <div class="holder feel">
+      <label for="feelings">How are you feeling today?</label>
+      <textarea class="myInput" id="feelings" placeholder="Share your feelings here . . ." rows="7" cols="50"></textarea>
+    </div>
+    <div class="gather">
+      <button id="generate" type="submit" onclick="submit()"> Click Me! </button>
+    </div>
+    <div class="holder entry">
+      <div class="title" rows="7" cols="50"><u>Most Recent Entry</u></div>
+      <div id="entryHolder">
+        <div id="date"></div>
+        <div id="temp"></div>
+        <div id="content"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
